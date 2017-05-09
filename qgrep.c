@@ -38,7 +38,7 @@ static const char * const qgrep_opts_help[] = {
 	"Only print FILE names containing no match",
 	"Use PATTERN as a regular expression",
 	"Use PATTERN as an extended regular expression",
-	"Search in installed ebuilds instead of the tree",
+	"Search in installed ebuilds instead of the Gentoo ebuild repository",
 	"Search in eclasses instead of ebuilds",
 	"Skip comments lines",
 	"Skip lines matching <arg>",

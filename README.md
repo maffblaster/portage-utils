@@ -13,7 +13,7 @@ of information.  The focus is on size and speed, so everything is in C.
 
 ## Building
 
-Just run `make`.  This should work on any recent POSIX compliant system.
+Just run `make`. This should work on any recent POSIX compliant system.
 
 ## Helping out
 
@@ -23,19 +23,19 @@ There's also a [HACKING](./HACKING.md) doc to help you get started.
 
 ## Examples
 
-* find elf files linking to old openssl<br>
+* find elf files linking to old openssl<br />
   `qlist -ao | scanelf -BqgN libssl.so.0.9.6 -f -`
 
-* print a package.use<br>
+* print a package.use<br />
   `qlist -UCq | grep ' ' > package.use`
 
-* find orphan files not owned by any package in /lib and /usr/lib<br>
+* find orphan files not owned by any package in /lib and /usr/lib<br />
   `qfile -o {,/usr}/lib/*`
 	
-* get PORTDIR<br>
+* get PORTDIR<br />
   `DEBUG=: ./q -Ch 2>&1 | grep ^PORTDIR | awk '{print $3}`
 
-* Verify all packages<br>
+* Verify all packages<br />
   `qcheck -a`
 
 ## Contact
@@ -56,15 +56,16 @@ Use Component of "Third-Party Tools".
 
 ### Speed is everything.
 
-Having your PORTDIR and VDB on the right file system helps dramatically
+Having the PORTDIR and VDB on the right file system can aid ebuild cache
+generation time dramatically.
 
-IDE raid with PORTDIR on reiserfs:
+IDE RAID with PORTDIR on reiserfs:
 
 ```
 $ q -r
 q: Finished 20655 entries in 1.990951 seconds
 
-IDE raid with PORTDIR on ext3:
+IDE RAID with PORTDIR on ext3:
 
 ```
 $ q -r

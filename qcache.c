@@ -29,7 +29,7 @@ static const char * const qcache_opts_help[] = {
 	"list packages that can be marked stable on a given arch",
 	"list packages that have dropped keywords on a version bump on a given arch",
 	"list packages that have ~arch versions, but no stable versions on a given arch",
-	"display statistics about the portage tree",
+	"display statistics about the Gentoo ebuild repository",
 	"list packages that have at least one version keyworded for on a given arch",
 	"list packages that aren't keyworded on a given arch.",
 	COMMON_OPTS_HELP

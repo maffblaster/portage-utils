@@ -22,7 +22,7 @@ static struct option const qcheck_long_opts[] = {
 };
 static const char * const qcheck_opts_help[] = {
 	"Ignore files matching the regular expression <arg>",
-	"Update missing files, chksum and mtimes for packages",
+	"Update missing files, chksum, and mtimes for packages",
 	"Ignore missing files",
 	"Only print pkgs containing bad files",
 	"Ignore differing/unknown file chksums",
